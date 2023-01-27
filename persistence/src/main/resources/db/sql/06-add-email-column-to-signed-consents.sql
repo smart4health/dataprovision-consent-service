@@ -1,0 +1,2 @@
+ALTER TABLE signed_consents
+ADD COLUMN email VARCHAR NULL;

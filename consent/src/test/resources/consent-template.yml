@@ -1,0 +1,76 @@
+---
+consent:
+  version: 1
+  author: Smart4Health
+
+welcome:
+  title: What is the Smart4Health project?
+  image: /svgs/corona.svg
+  description: Smart4Health is a project funded under the Horizon 2020 funding program by the European Union (EU). It started in January 2019, will run until February 2023 and is conducted by an interdisciplinary consortium of different public and private organisations (non-pharmaceutical) located in several EU member states, and a partner from the United States of America (to test data transfer only from the US to the EU). You can find a more detailed description of the consortium at Partner in the Smart4Health project.
+
+information:
+  - title: What is the purpose of the Smart4Health project?
+    image: /svgs/digital-health.svg
+    summary: The purpose of the Smart4Health project is to develop the Smart4Health platform and its service, allowing users, such as yourself, to handle their personal medical, health, and fitness data. You can use the Smart4Health service to collect your health data from different sources, upload and save them in your personal Smart4Health account, to access them and share them with others. The choice of which health-related data you want to collect and with whom you want to share them is entirely up to you.
+    description: |
+      The purpose of the Smart4Health project is to develop and test the prototype of the Smart4Health platform and its service. The Smart4Health service enables users, such as yourself, to collect and handle your personal medical, health, and fitness data. This includes collecting data from your electronic health record (but is not limited to it).
+
+      Electronic health record data may include but is not limited to diagnoses and procedures, diagnostic test results, images, medications, and summary reports from any of your electronic health records that come from previously visited health professionals or hospitals.
+
+      Citizen-generated fitness and health data include data from sensors, wearables and/or fitness apps (e.g., the heart rate data tracked by a smartwatch).
+
+      Platform and service shall also enable you to optionally provide your data for research. This means that you can make your de-identified data (or a selection of it) available for research purposes, if you wish to do so. More details can be found under Features of the Smart4Health service. More details can be found under Features of the Smart4Health service.
+
+  - title: What does your participation in the Smart4Health project involve?
+    image: /svgs/voluntary-participation.svg
+    summary: If you agree to participate in the project, you will be asked to register for the Smart4Health platform and its service, to use and to test it. Occasionally, we might ask you to provide feedback on certain features or to participate in user engagement exercises. Taking part in the Smart4Health project is completely voluntary. You can change your mind and leave at any time.
+    description: |
+      Participating in the Smart4Health project involves testing the Smart4Health platform and its service. This means that if you agree to participate, you will be asked to:
+      - Access the Smart4Health web interface from your computer, smartphone or mobile device
+      - Register for the Smart4Health service, creating a Smart4Health account (without uploading health-related data yet)
+      - Use the Smart4Health service to upload and handle your data, and (optionally) provide your data for research.
+      The amount of time you spend using the service is up to you.
+
+  - title:  What are the benefits from participating in Smart4Health?
+    image: /svgs/research.svg
+    summary: You will not receive direct medical benefits from participation. However, there are several benefits you may experience from using the platform and its service, such as always having your health data digitally in one place and being able to share them with health professionals when needed. There are and will be no costs associated with its use.
+    description: |
+      The Smart4Health service does not provide medical treatment. Therefore, you will not receive direct medical benefits from using the service provided by the platform.
+      However, there are several benefits you may experience when using the service:
+
+      It may make it easier for you to keep your health records data updated, structured, and digitally accessible in one single place.
+
+      It may help you to share your health data with your health professionals when needed, and thereby help them to be better informed when making decisions regarding your health and treatments.
+
+      It may help you to share your health data with trusted individuals, such as family members.
+
+      It allows you to provide your health data and to participate in health research. This will require a separate consent.
+
+      Are there any costs associated if you use the Smart4Health service?
+
+      There are and will be no costs associated with the use of the Smart4Health service.
+
+options:
+  - title: Voluntary Participation
+    summary: Yes, I freely and voluntarily choose to participate in the Smart4Health project.
+    description: Yes, I freely and voluntarily choose to participate in the Smart4Health project. I have thoroughly read the Extended information on project participation and I understand the information and all the benefits and risks, if I participate in the Smart4Health project and use the Smart4Health service provided through the Smart4Health platform. I have had the opportunity to ask questions using the Contact information and all of my questions have been answered to my satisfaction.
+    required: true
+  - title: Consent Withdrawal
+    summary: Yes, I understand that I can withdraw my consent at any time
+    description: Yes, I understand that I can withdraw my consent at any time by deleting my Smart4Health account. I can withdraw it at any time with effect for the future. However, the platform and the service will then no longer be usable. The lawfulness of processing my data until my withdrawal remains unaffected by this. Withdrawal will not influence my standard medical care. If I withdraw, the data will be deleted permanently.
+    required: true
+  - title: Data Processing
+    summary: Yes, I consent to the processing of my personal data
+    description: |
+      Yes, I consent to the processing of my personal data by D4L data4life gGmbH, Rudolf-Breitscheid-Straße 185–189, 14482 Potsdam, Germany (managing director: Christian-Cornelius Weiß), for the purpose of using the Smart4Health service. D4L is a partner in the EU-funded Smart4Health project and the data controller for the Smart4Health platform and its service. The purpose of the service is to manage my health data and exchange data with my treating healthcare professionals. I am aware of the Features the service provides.
+
+      The data processed includes special categories of personal data, and data concerning health (medical history, drug prescriptions, test results, etc.) as part of the use of the service.
+
+      I am aware that the Smart4Health project and D4L are not subject to professional medical secrecy, but protect personal data in compliance with the applicable data protection laws. I have also taken note of the privacy policy and the terms of use.
+
+      I further confirm that:
+
+          I am over 18 years old.
+          I am a resident of the EU.
+          This consent is dynamic, which means there might be changes around the development of the platform and service and in the evaluation of it. If changes This consent is dynamic, which means there might be changes around the development of the platform and service and in the evaluation of it. If changes are made to the platform and service that would directly affect me, I will be contacted to provide my consent again.
+    required: true

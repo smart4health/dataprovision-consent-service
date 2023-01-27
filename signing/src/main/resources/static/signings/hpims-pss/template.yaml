@@ -1,0 +1,41 @@
+---
+consent:
+  version: "1"
+  author: Smart4Health
+signing:
+  title: Sign Consent
+  review: Review Consent
+  summary: |
+    <b>I have been informed</b> about the use of my health data and the associated risks and give my consent within the scope of what was explained before.
+    <br><br>
+    I have had enough time to consider the information and ask questions which have been <b>answered to my satisfaction</b>.
+    <br><br>
+    I agree to the processing of my personal data by the Hasso-Plattner-Institut für Digital Engineering gGmbH,
+    Prof.-Dr.-Helmert-Str. 2-3 14482 Potsdam, Germany (managing director: Prof. Dr. Christoph Meinel), for the purpose
+    of providing my health data to the Smart4Health research platform.
+    <br><br>
+    I have been informed that I will <b>receive a copy</b> of the information sheet, the privacy policy, and the signed consent statement.
+    <br><br>
+    By signing this form, I am <b>consenting to providing my health data</b> to the Smart4Health research platform under the before selected conditions.
+  signature:
+    clear: Clear
+    errors:
+      required: Please write your signature in the space provided
+  firstName:
+    label: First Name
+  lastName:
+    label: Last Name
+  email:
+    label: Email
+    errors:
+      required: Please enter a valid email
+  conditions:
+    - text: I understand this is a legal representation of my signature.
+      required: true
+  submit: SIGN
+  cancel:
+    button: CANCEL
+    confirmHeader: Are you sure you want to exit the consent process?
+    confirmContent: If you exit, you will need to repeat the consent process before participating in the Smart4Health study.
+    confirmCancel: "Yes"
+    rejectCancel: "No"

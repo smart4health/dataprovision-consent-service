@@ -1,0 +1,106 @@
+/* The following styles will change how the "continue" button on the welcome page appears. You might consider changing the background color,
+ * border radius, or font color
+ */
+.welcome-next-button {
+}
+
+/* The following styles will change how the buttons to continue
+ * and move back on the summary pages (the pages that display the "summary" text from the template) appear. You might consider changing the background color,
+ * border radius, or font color
+ */
+.summary-back-button {
+}
+
+.summary-next-button {
+}
+
+/* The following styles will change how the buttons to continue
+ * and move back on the description pages (the pages that go into detail on
+ * a given page) appear. You might consider changing the background color,
+ * border radius, or font color
+ */
+.description-back-button {
+}
+
+.description-next-button {
+}
+
+/* The following styles will change how the buttons to continue
+ * and move back on the option pages (the pages that present a user with a toggle) appear. You might consider changing the background color,
+ * border radius, or font color
+ */
+.option-back-button {
+}
+
+.option-next-button {
+}
+
+/* The following styles will change how the buttons to continue
+ * and move back on the review consent page (the page that presents a user with the full consent they will be signing) appear. You might consider changing the background color,
+ * border radius, or font color
+ */
+.review-back-button {
+}
+
+.review-next-button {
+}
+
+/** The following style will change how the toggles appear
+  * on the pages that present the user with an option to
+  * accept or reject. For instance, you might want to change
+  * the background color of the toggle when it is accepted or rejected.
+*/
+.slider {
+  /* background-color: #ccc; */
+}
+
+/* Change the background color here to change the color
+ * of the toggle when selected
+ */
+input:checked + .slider {
+  /* background-color: #2789C2; */
+}
+
+/* Change the background color here to change the color
+ * of the toggle when selected
+ */
+input:focus + .slider {
+  /* box-shadow: 0 0 1px #2789C2; */
+}
+
+/**
+  * The following styles change how the accept and reject
+  * text accompanying the option toggle appears. You might
+  * consider changing the font, font-size, or adding padding
+ */
+.option-text-reject {
+}
+
+.option-text-accept {
+}
+
+li:not(:last-child) {
+   margin-bottom: 5px;
+}
+
+/**
+* Start: Adjustments for using rich text within the yaml
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "RobotoSlab";
+}
+
+.consent-document-section a:link, .consent-content a:link, .modal-learn-more-body a:link {
+    color: #34A1AD;
+}
+.consent-document-section a:visited, .consent-content a:visited, .modal-learn-more-body a:visited {
+    color: #34A1AD;
+}
+
+.box {
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+/**
+* End: Adjustments for using rich text within the yaml
+*/

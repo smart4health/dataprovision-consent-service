@@ -1,0 +1,287 @@
+@font-face {
+  font-family: RobotoSlab;
+  src: url(/consent-assets/fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoSlab-SemiBold;
+  src: url(/consent-assets/fonts/RobotoSlab-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(/consent-assets/fonts/Lato-Regular.ttf);
+}
+
+/* Global Classes */
+.header {
+  font-family: "RobotoSlab";
+}
+
+.largest-font {
+  font-size: 1.6rem;
+}
+
+.medium-font {
+  font-size: 1rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.link {
+  text-decoration: underline;
+  background: none;
+  border-style: none;
+  text-align: center;
+  cursor: pointer;
+  color: #65AEEC;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.signature-container {
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  align-self: center;
+  padding: 5px;
+}
+
+.form-section {
+  padding: 10px 0;
+}
+
+canvas {
+  background-color: #d3d3d3;
+}
+
+#canvas-container {
+  border-style: none;
+}
+
+.signature-text-input-container {
+  width: 100%;
+}
+
+/* Styles the material design input labels */
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: #06344f !important;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #06344f !important;
+  box-shadow: 0 1px 0 0 #06344f !important;
+}
+/* checkbox colors */
+[type="checkbox"]:checked + span:not(.lever)::before {
+  border-right: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+}
+.confirm-signature-container > input {
+  margin-right: 10px;
+}
+
+.button {
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 30px;
+  width: 25vw;
+}
+
+.review-consent-container {
+  padding-bottom: 20px;
+}
+
+.submit-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#cancel-button {
+  margin-top: 10px;
+  background: none;
+  border-style: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #65AEEC;
+}
+
+/* Material Design Field Styles */
+.material {
+  position: relative;
+  padding: 0;
+  margin: 5px;
+  border: none;
+  overflow: visible;
+}
+
+.material input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 10px 8px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 120%;
+  outline: none;
+  cursor: text;
+}
+
+.material input::-webkit-input-placeholder {
+  transition: color 300ms ease;
+}
+
+.material input:not(:focus)::-webkit-input-placeholder {
+  color: transparent;
+}
+.material hr {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background: #607d8b;
+  font-size: 1px;
+  will-change: transform, visibility;
+  transition: all 200ms ease-out;
+  transform: scaleX(0);
+  visibility: hidden;
+  z-index: 10;
+}
+
+.material input:focus ~ hr {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.material label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 120%;
+  color: #607d8b;
+  transform-origin: 0 -150%;
+  transition: transform 300ms ease;
+  pointer-events: none;
+}
+
+.material input:focus ~ label,
+.material input:valid ~ label {
+  transform: scale(0.6);
+}
+
+/** Modal */
+/* The Modal (background) */
+.modal {
+  font-family: "Lato", sans-serif;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.modal-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.cancel-modal-header {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.cancel-modal-body, .cancel-modal-header {
+  padding: 0px 10px;
+}
+.modal-options {
+  border-top: 1px solid black;
+}
+
+.modal-option {
+  cursor: pointer;
+  flex: 1;
+}
+
+.modal-option-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #65AEEC;
+}
+
+#confirm-confirm-cancel-modal {
+  border-right: 1px solid black;
+}
+
+#close-confirm-cancel-modal {
+  font-weight: 700;
+}
+
+.form-input-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+#signature-form-error {
+  color: red;
+}

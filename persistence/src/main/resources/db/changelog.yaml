@@ -1,0 +1,78 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Healthmetrix GmbH
+      comment: Sets up the table signed consents
+      changes:
+        - sqlFile:
+            path: db/sql/01-create-signed-consents.sql
+  - changeSet:
+      id: 2
+      author: Healthmetrix GmbH
+      comment: Sets up the table for linking consents to chdp ids
+      changes:
+        - sqlFile:
+            path: db/sql/02-create-linked-consents.sql
+  - changeSet:
+      id: 3
+      author: Healthmetrix GmbH
+      comment: Sets up table for cached consents
+      changes:
+        - sqlFile:
+            path: db/sql/03-create-cached-consents.sql
+  - changeSet:
+      id: 4
+      author: Healthmetrix GmbH
+      comment: Adds new document column to signed_consents table
+      changes:
+        - sqlFile:
+            path: db/sql/04-add-document-to-signed-consents.sql
+  - changeSet:
+      id: 5
+      author: Healthmetrix GmbH
+      comment: Adds a JSONB metadata column to signed consents
+      changes:
+        - sqlFile:
+            path: db/sql/05-add-metadata-column-to-signed-consents.sql
+  - changeSet:
+      id: 6
+      author: Healthmetrix GmbH
+      comment: Adds an optional email column to signed consents
+      changes:
+        - sqlFile:
+            path: db/sql/06-add-email-column-to-signed-consents.sql
+  - changeSet:
+      id: 7
+      author: Healthmetrix GmbH
+      comment: Adds an optional withdrawn_at column to signed consents
+      changes:
+        - sqlFile:
+            path: db/sql/07-add-withdrawn-at-column-to-signed-consents.sql
+  - changeSet:
+      id: 8
+      author: Healthmetrix GmbH
+      comment: Adds consent_id column to signed_consents
+      changes:
+        - sqlFile:
+            path: db/sql/08-add-consent-id-column-to-signed-consents.sql
+  - changeSet:
+      id: 9
+      author: Healthmetrix GmbH
+      comment: Introduce consent_flows table
+      changes:
+        - sqlFile:
+            path: db/sql/09-introduce-consent-flows-table.sql
+  - changeSet:
+      id: 10
+      author: Healthmetrix GmbH
+      comment: Drop unused columns from signed_consents table
+      changes:
+        - sqlFile:
+            path: db/sql/10-drop-unused-columns-signed-consents.sql
+  - changeSet:
+      id: 11
+      author: Healthmetrix GmbH
+      comment: Drop linked_flows table
+      changes:
+        - sqlFile:
+            path: db/sql/11-drop-linked-consents.sql

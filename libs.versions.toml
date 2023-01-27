@@ -1,0 +1,112 @@
+[versions]
+kotlin = "1.8.0"
+spring-boot = "2.7.8"
+spring-cloud = "3.1.1"
+okhttp3 = "4.10.0"
+junit = "5.9.2"
+# Spring Boot 2.x.x does not yet support SLF4J 2.0.0 as spring-boot-starter-logging requires StaticLoggerBinder: https://github.com/spring-projects/spring-boot/issues/12649
+slf4j-prefer = "1.7.36"
+slf4j-max = "2.0"
+springdoc = "1.6.14"
+hibernate-validator = "6.2.5.Final" # has to stay on 6.x.x until spring 6 is Jakarta EE 9 compatible
+micrometer = "1.10.3"
+
+[plugins]
+gradle-versions = { id = "com.github.ben-manes.versions", version = "0.44.0" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+frontend-build = { id = "org.siouan.frontend-jdk11", version = "5.3.0" } # requires migration https://github.com/siouan/frontend-gradle-plugin/releases/tag/v6.0.0
+
+[libraries]
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin", version.ref = "kotlin" }
+kotlinx-html = "org.jetbrains.kotlinx:kotlinx-html-jvm:0.8.0"
+
+spring-boot-boot = { module = "org.springframework.boot:spring-boot", version.ref = "spring-boot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "spring-boot" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux", version.ref = "spring-boot" }
+spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa", version.ref = "spring-boot" }
+
+spring-cloud-vault-config = { module = "org.springframework.cloud:spring-cloud-starter-vault-config", version.ref = "spring-cloud" }
+
+spring-ext-mockk = "com.ninja-squad:springmockk:3.1.2"
+spring-ext-reactor = "org.projectreactor:reactor-spring:1.0.1.RELEASE"
+
+springdoc-openapi = { module = "org.springdoc:springdoc-openapi-kotlin", version.ref = "springdoc" }
+springdoc-ui = { module = "org.springdoc:springdoc-openapi-ui", version.ref = "springdoc" }
+
+okhttp3-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp3" }
+
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
+
+liquibase-core = "org.liquibase:liquibase-core:4.19.0"
+liquibase-jakarta = "jakarta.xml.bind:jakarta.xml.bind-api:4.0.0"
+
+logback-core = "ch.qos.logback:logback-core:1.4.5"
+logback-encoder = "net.logstash.logback:logstash-logback-encoder:7.2"
+
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j-prefer" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j-prefer" }
+
+jackson-kotlin = "com.fasterxml.jackson.module:jackson-module-kotlin:2.14.1"
+jackson-yaml = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.1"
+jackson-xml = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.14.1"
+jackson-databind = "com.fasterxml.jackson.core:jackson-databind:2.14.1"
+
+aws-secretsmanager = "com.amazonaws.secretsmanager:aws-secretsmanager-caching-java:1.0.2"
+
+micrometer-cloudwatch2 = { module = "io.micrometer:micrometer-registry-cloudwatch2", version.ref = "micrometer" }
+micrometer-prometheus = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "micrometer" }
+assertj = "org.assertj:assertj-core:3.24.2"
+mockk = "io.mockk:mockk:1.13.3"
+bouncycastle-bcprov = "org.bouncycastle:bcprov-jdk15on:1.70"
+bouncycastle-bcpkix = "org.bouncycastle:bcpkix-jdk15on:1.70"
+postgres = "org.postgresql:postgresql:42.5.1"
+opencsv = "com.opencsv:opencsv:5.7.1"
+
+result = "com.michael-bull.kotlin-result:kotlin-result:1.1.16"
+
+pdfbox = "org.apache.pdfbox:pdfbox:2.0.27"
+
+json = "org.json:json:20220924"
+
+# Beware of upgrading to 4.x.x for breaking changes: https://github.com/auth0/java-jwt/blob/master/MIGRATION_GUIDE.md#upgrading-from-v3x---v40
+jwt = "com.auth0:java-jwt:3.19.4"
+
+firebase-admin = "com.google.firebase:firebase-admin:9.1.1"
+
+hibernate-validator-core = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
+hibernate-validator-cdi = { module = "org.hibernate.validator:hibernate-validator-cdi", version.ref = "hibernate-validator" }
+hibernate-validator-processor = { module = "org.hibernate.validator:hibernate-validator-annotation-processor", version.ref = "hibernate-validator" }
+
+types-hibernate = "com.vladmihalcea:hibernate-types-52:2.21.1"
+
+schema-generate = "com.kjetland:mbknor-jackson-jsonschema_2.12:1.0.39"
+
+[bundles]
+liquibase = ["liquibase-core", "liquibase-jakarta"]
+hibernate-validator = ["hibernate-validator-core", "hibernate-validator-cdi", "hibernate-validator-processor"]
+springdoc = ["springdoc-ui", "springdoc-openapi"]
+
+# use exclusionsTestImplementation()
+test-implementation = ["junit-jupiter-api", "assertj", "mockk"]
+
+test-runtime = ["junit-jupiter-engine", "logback-core", "slf4j-simple"]
+
+# use exclusionsSpringTestImplementation()
+test-spring-implementation = [
+    "junit-jupiter-api",
+    "assertj",
+    "spring-ext-mockk",
+    "spring-boot-starter-test",
+    "mockk"
+]
+
+# use exclusionsSpringTestRuntime()
+test-spring-runtime = ["junit-jupiter-engine"]

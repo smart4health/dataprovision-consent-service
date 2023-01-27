@@ -1,0 +1,481 @@
+---
+consent:
+  version: "1"
+  author: Smart4Health
+  learnMoreDisplayType: MODAL
+defaults:
+  navigation:
+    back: BACK
+    next: CONTINUE
+    learnMore: MORE DETAILS
+    exit: Exit
+    answer: Answer
+    share: Share
+    close: CLOSE
+welcome:
+  title: Introduction
+  image: /svgs/s4h.svg
+  description: |
+    With the MyScience App, you can choose to provide your health data for <popup data-id="research">health research</popup>.
+    <br><br>
+    Research insights that are gained from using your <popup data-id="data">health data</popup> may substantially
+    contribute to the goals of health research.
+    <br><br>
+    Providing health data for research is voluntary. If you do not wish to provide data for research, or wish to withdraw
+    your consent later, it will not affect the medical care you receive or your ability to use your Smart4Health account.
+    <br><br>
+    In the following, <popup data-id="we">we</popup> describe the process and considerations related to providing your data to research.
+    Please read the information provided, the <a target="blank" href="https://myscience-app.smart4health.eu/privacy-statement-en.html">Privacy Policy</a>,
+    and the <a target="blank" href="https://myscience-app.smart4health.eu/terms-of-use-en.html">Terms of Use</a> carefully and take the time you need to
+    make an informed decision. If you do not fully agree with the nature of data use, or if we have not fully answered your questions,
+    you should not give your consent.
+
+information:
+  - title: What kind of data do we ask you to provide?
+    image: /svgs/data-storage.svg
+    summary: |
+      When you provide your health data, we ask you for the <popup data-id="core">core set of data</popup> as far as
+      available in your Smart4Health account. You can also provide additional
+      <popup data-id="optional">optional health data</popup>, depending on your personal preferences, which you can
+      define in the MyScience App.
+    description: ""
+
+  - title: What happens when you provide your health data?
+    image: /svgs/process.svg
+    summary: |
+      After confirming the provision of the core set of data and potentially selecting optional health data,
+      we <popup data-id="personal">remove or generalize personal information</popup> in your data.
+      We add a <popup data-id="code">code</popup> to your data. The data is now <popup data-id="pseudonym">“pseudonymised data”</popup>.
+      This code is stored only in your MyScience App.
+      We store the pseudonymised data in the research platform.
+      <br><br>
+      At the end of this process, you will receive a notification of the successful data provision.
+      <br><br>
+      Please be aware that in order for researchers to be able to use your health data for research, the <b>provision
+      of a</b> <popup data-id="core">core set of data</popup> <b>is required</b>.
+    description: ""
+
+  - title: Who can access your data for health research?
+    image: /svgs/research.svg
+    summary: |
+      Access to the data is controlled and researchers can work with the data only on the research platform (no download of data is allowed).
+      <br><br>
+      Researchers from universities, research institutions and <popup data-id="companies">commercial companies</popup>
+      can apply for data access with their health research project. The <popup data-id="DAC">Smart4Health Data Access
+      Committee</popup> reviews each research project. If it does not meet all criteria for data access, access is not granted. The
+      data must not be used by other researchers or for other purposes than defined in the research project. Your health
+      data will be used exclusively for scientific purposes and will not be sold.
+      <br><br>
+      Data access is restricted to researchers from EU countries or from countries where the EU has determined that
+      adequate data protection measures are in place.
+      Though your data will not be sold, the provider of the Smart4Health research platform may collect a handling fee
+      from the respective researchers, in the future.
+      <br><br>
+      Using data for scientific purpose includes publishing results in a form that <b>does not
+      allow any conclusions about or links to your identity</b>.
+    description: ""
+
+  - title: How is your data used?
+    image: /svgs/how-is-used.svg
+    summary: |
+      Your health data will only be used for health research. Using your data for health research means that
+      <b>researchers will access your data within the Smart4Health research platform</b>, combine it with data provided
+      by other users, and analyse them with tools running on the research platform to find answers to various
+      health research questions.
+      <br><br>
+      The results of these analyses are exported from the research platform to be shared and discussed with others.
+      Your health data does not leave the Smart4Health research platform without your explicit consent.
+    description: ""
+
+  - title: Who decides which research uses your data?
+    image: /svgs/scientific-databases.svg
+    summary: |
+      We do not offer the possibility to select the kind of research or the research fields. Research may refer to
+      whole areas of disease (e.g., cancer, cardiovascular diseases, brain diseases) as well as to specific diseases
+      and to changes in the genetic substance that are still partly unknown today. This means that your health data
+      may be used for research questions that we cannot foresee today.
+    description: ""
+
+  - title: How can you provide additional data for research?
+    image: /svgs/search.svg
+    summary: |
+      Whenever you have new personal health data stored in your <i>Smart4Health account</i> you can also provide this
+      data for research using the <i>MyScience App</i>.
+      <br><br>
+      Alternatively, you can decide to allow the <b>automatic provision of future data</b> using the <i>MyScience App</i>.
+      This means that data you have newly collected will be automatically provided.
+      <br><br>
+      This applies to all new data matching your selection.
+      <br><br>
+      You will receive a notification of the successful provision as a push-message or as an email according to your preferences
+    description: ""
+
+  - title: Does your health data leave the Smart4Health research platform?
+    image: /svgs/exit.svg
+    summary: |
+      If you have consented to this, a copy of your data is transferred from the Smart4Health research platform to
+      <popup data-id="ELIXIR">ELIXIR-LU</popup>. For this purpose, we <popup data-id="anonym">anonymize</popup> the
+      data by removing your code. ELIXIR-LU has access criteria comparable to our access criteria.
+      <br><br>
+      At acceptance, the data can be downloaded by the researcher. The researcher’s institution is responsible for and supervises the data processing.
+    description:
+      You can choose whether or not a copy of the data you provided to the Smart4Health research platform may also be
+      transferred to ELIXIR-LU, the publicly funded Luxembourgish national node of ELIXIR, the European infrastructure
+      for life science information. In this case, the pseudonymized data is anonymized and copied from the Smart4Health research platform to ELIXIR-LU.
+      <br><br>
+      The data access request must be approved by the ELIXIR-LU Data Access Committee following the data access
+      criteria comparable to the ones outlined in <a target="blank" href="https://smart4health.eu/dac">https://smart4health.eu/dac</a>. The process and
+      criteria correspond to those described before.
+      However, in case of approval, researchers will download the data. The responsibility and supervision of
+      the data lies with the receiving institution, which ensures a level of data security and compliance measures
+      comparable to those established in Smart4Health.
+
+  - title: What are the risks associated with providing your health data?
+    image: /svgs/warning.svg
+    summary: |
+      Whenever you provide data, there is a risk that private information is disclosed. Data stored in the Smart4Health
+      research platform is separated from your name and other personal identifiers. We have implemented further
+      adequate procedures to minimize this risk.
+      <br><br>
+      If your private information has been misused, you could experience harms, such as stress, anxiety, stigmatization,
+      or embarrassment from revealing information about your family relations or health condition.
+      <br><br>
+      In the case of a data breach, we will contact you within 72 hours.
+    description: |
+      The code linking your data to your identity is stored separately and securely within your
+      MyScience App on your smartphone and therefore remains with you. Any attempt to identify you from
+      the provided health data is prohibited by law and impracticable in practice as it would require a disproportionate
+      amount of time, expense, and labor.
+      <br><br>
+      If you agree to provide pseudonymized data to the Smart4Health research platform or anonymized data to ELIXIR-LU,
+      it is important to remember that pseudonymization and anonymization of your health data can never completely rule
+      out the possibility of re-identification by drawing on other data sources.
+      <br><br>
+      Examples for misuse of private information are, e.g., taking actions on your behalf or blackmailing you with the
+      threat to disclose health information.
+      <br><br>
+      In the case of a data breach, we will contact you via the MyScience app within 72 hours after we have become aware
+      of the breach according to Article 33 and 34 of the EU GDPR.
+
+  - title: What are the benefits for society?
+    image: /svgs/charity-help.svg
+    summary: |
+      Health research carried out with your data aims to understand how
+      <ul>
+      <li>diseases develop over time, </li>
+      <li> prevention and detection of diseases and conditions can be improved, and </li>
+      <li>treatment and care can be improved. </li>
+      </ul>
+      This has the potential to
+      <ul>
+      <li>reduce severity and costs of illness,</li>
+      <li>prevent illness and improve health, and therefore</li>
+      <li>increase the quality of life.</li>
+      </ul>
+      You can learn about research activities based on the data in the Smart4Health research platform
+      at <a target="blank" href="https://smart4health.eu/research">https://smart4health.eu/research</a>.
+    description: ""
+
+  - title: What are the benefits for you personally?
+    image: /svgs/charity-tree.svg
+    summary: |
+      No direct benefit to your health can be expected from providing your data for health research.
+      However, you can also enjoy the benefits for society.
+      Neither provision nor non-provision of data for research will impact the concrete medical treatment you may receive.
+      <br><br>
+      If the research leads to commercial benefits, e.g., through the development of new drugs or diagnostic procedures,
+      you will neither have rights in the results nor receive a share in the profits.
+    description: ""
+
+  - title: How can you withdraw your consent?
+    image: /svgs/exit.svg
+    summary: |
+      Providing data for research is voluntary. You can withdraw your consent to provide health data for research with
+      effect for the future at any time, without consequences for you. You can do this in whole, or in parts by
+      changing individual statements.
+      <br><br>
+      Use the withdraw function in the MyScience App or <popup data-id="contact">contact</popup> us
+      directly (e.g., <a href="mailto:helpdesk@smart4health.eu">helpdesk@smart4health.eu</a>).
+      <br><br>
+      If you withdraw, your health data will be <popup data-id="anonym">anonymized</popup>. This anonymized data
+      will not be used for any future research within the Smart4Health research platform. However, it has to remain accessible for a
+      duration of 10 years to ensure that research results of completed and ongoing research projects can be reproduced.
+    description: |
+      Note that data cannot be removed from completed and ongoing projects or if anonymized data has been transmitted
+      to ELIXIR-LU as we cannot trace it back to you.
+      <br><br>
+      You may also change individual parts of the declaration of consent without withdrawing it in whole.
+      For example, you may change your consent preferences if you wish to continue to make the health data
+      available to research but no longer have interest in being contacted for study participation.
+      <br><br>
+      As we explained in the section on risks, anonymization of your health data can never completely rule
+      out the possibility of re-identification by drawing on other data sources.
+
+  - title: How long is your consent valid?
+    image: /svgs/circular-clock-time.svg
+    summary: |
+      Your consent to the provision of health data for research within the Smart4Health research platform is
+      valid for the duration of the Smart4Health project, which will presumably end on February 28, 2023, unless
+      you have withdrawn your consent before its end.
+      <br><br>
+      You can continue to provide your health data after the end of the project by signing a re-consent form. If
+      you do not re-consent, your health data that has been stored based on this consent will be anonymized, by
+      erasing the code that has been assigned to you.
+      As in the case of withdrawing your consent, this anonymized data will not be used for any future research.
+      It will remain accessible for a duration of 10 years for completed and ongoing research projects to ensure
+      that research results can be reproduced.
+      <br><br>
+      The optional provision of health data to ELIXIR-LU is unaffected by the project end. Anonymized health
+      data that was already provided to ELIXIR-LU remains on their premises. This anonymized data cannot be traced back
+      to you and therefore cannot be deleted upon your request.
+      It remains available to be used for research.
+    description: ""
+
+  - title: Right of withdrawal
+    image: /svgs/stop-violence.svg
+    summary: |
+      <i><b>I voluntarily consent to provide my data for research.</b></i> I may withdraw my consent in whole or in part in the
+      <i>MyScience App</i> or by contacting HPI at any time, without giving reasons and without any consequences for me.
+      <br><br>
+      Upon withdrawal, the data stored on the basis of this consent will not be used for future research.
+      It will be deleted (anonymized). Data from already performed analyses cannot be removed.
+    description: ""
+
+  - title: How can you reach us?
+    image: /svgs/information-info.svg
+    summary: |
+      <i><b>For any questions, concerns, or enquiries you can contact us directly:</b></i>
+      <br><br>
+      Hasso-Plattner-Institut für Digital Engineering gGmbH,
+      <br>
+      Prof.-Dr.-Helmert-Str. 2-3, 14482 Potsdam, Germany
+      <br>
+      (Responsible Project Manager: Prof. Dr. Erwin Böttinger)
+      <br><br>
+      E-Mail: 	<a href="mailto:helpdesk@smart4health.eu">helpdesk@smart4health.eu</a>
+      <br>
+      Website: 	<a target="blank" href="https://smart4health.eu">https://smart4health.eu</a>
+    description: ""
+
+  - title: May we contact you?
+    image: /svgs/recontacting.svg
+    summary: |
+      You can consent to be contacted by us with
+      <ul>
+      <li>general updates to the research platform,</li>
+      <li>general information based on the data you provided for research (e.g., aggregated research results, number of projects using your data), and</li>
+      <li>invitations to participate in research studies outside the Smart4Health project, which are related to the data you provided.</li>
+      </ul>
+      You can change your preference also later in the App.
+      <br><br>
+      If you have agreed to be contacted, researchers may submit a request to the <popup data-id="DAC">Smart4Health Data
+      Access Committee</popup> . After approval, you receive the contacting message in the App. Neither researcher nor
+      Committee ever know your identity.
+    description: |
+      Even if you are being contacted for a study on a specific condition, this does not mean that you have this
+      condition, but only that your profile fits into the study design, e.g., as member of the control group.
+      <br><br>
+      If you decide to participate in studies outside of the research platform, you are redirected to an external
+      website or software that is not under the responsibility of the data controller.
+
+options:
+  - title: General Consent
+    summary: |
+      <ul>
+      <li><b>I consent to the processing and use of my health data for health research</b> exclusively as described in
+      the information sheet, with separate storage of my name and other directly identifying data (pseudonymization).</li>
+      <li><b>I consent to the scientific analysis and use of my coded health data by researchers associated with</b>
+      universities, research institutes or commercial companies on the premises of the Smart4Health research platform.</li>
+      <li>I understand that I will receive no compensation for providing data for research and that I have no rights in
+      the result of the research.</li>
+      <li>I agree to the <a target="blank" href="https://myscience-app.smart4health.eu/terms-of-use-en.html">Terms of Use</a>
+      and <a target="blank" href="https://myscience-app.smart4health.eu/privacy-statement-en.html">Privacy Policy</a>.</li>
+      <ul>
+    description: ""
+    required: true
+    accept: <b>Yes</b>, I consent
+    reject: <b>No</b>, I do not consent
+    popover: To continue, please choose option YES or NO
+    requiredPopup:
+      title: QUIT CONSENT?
+      text: |
+        If you do not agree to the general consent, you will not be able to participate in the data provision program for research.
+        <br><br>
+        Are you sure?
+      confirm: "YES, QUIT"
+      cancel: "NO"
+
+  - title: Option to automatically provide future data
+    summary: |
+      I agree that health data from my selected categories is <b>automatically processed to be provided to the
+      Smart4Health research platform when it is newly uploaded to my personal Smart4Health account</b>. I understand
+      that this always applies to the <b>core set of data</b> (demographics, institution, medication, allergies and
+      intolerances, clinical conditions). Apart from that, <b>I can decide in my user preferences which optional
+      health data is uploaded automatically</b>. Details have been provided before.
+    description: ""
+    required: false
+    accept: <b>Yes</b>, I consent
+    reject: <b>No</b>, I do not consent
+    popover: To continue, please choose option YES or NO
+
+  - title: Option to transmit my health data to ELIXIR-LU in anonymized form
+    summary: |
+      I consent that a <b>copy of my health data is transferred from the Smart4Health research platform to the European Research Infrastructure
+      <popup data-id="ELIXIR">ELIXIR-LU</popup> in <popup data-id="anonym">anonymized</popup> form</b>. Details have been provided before.
+    description: ""
+    required: false
+    accept: <b>Yes</b>, I consent
+    reject: <b>No</b>, I do not consent
+    popover: To continue, please choose option YES or NO
+
+  - title: Options to be contacted
+    summary: |
+      I agree that I may be contacted by Smart4Health in order to receive
+      <ul>
+      <li>general updates to the research platform,</li>
+      <li>general information based on the data you provided for research (e.g., aggregated research results, number of projects using your data), and</li>
+      <li>invitations to participate in research studies outside the Smart4Health project, which are related to the data you provided.</li>
+      </ul>
+    description: ""
+    required: false
+    accept: <b>Yes</b>, I consent
+    reject: <b>No</b>, I do not consent
+    popover: To continue, please choose option YES or NO
+
+glossary:
+  config:
+    reviewPageTitle: Glossary
+  items:
+    - id: research
+      text: |
+        <b>Health research</b> means all “health, medical, and biomedical research”, that aims to improve the health
+        of citizens in everyday life, the treatment and prevention of disease by health professionals, and the
+        understanding of disease mechanisms.
+      config:
+        reviewPageTitle: Research
+    - id: we
+      text: |
+        We, the <popup data-id="contact">Hasso-Plattner-Institut für Digital Engineering gGmbH</popup> as part of the EU-funded
+        <a target="blank" href="https://smart4health.eu/consortium">Smart4Health project</a>, are responsible for the processing of your health data and
+        provide this mobile App.
+      config:
+        reviewPageTitle: Hasso-Plattner-Institut für Digital Engineering gGmbH
+    - id: data
+      text: |
+        <b>Health data</b> is all information related to your personal health collected in your Smart4Health account.
+        This includes, but is not limited to, <b>patient data</b> from your electronic health/patient/medical records,
+        if available, as well as your <b>self-generated fitness and health data</b>.
+        <blockquote>
+          <b>Patient data</b> is all information about you that is recorded during a medical examination and treatment.
+          It is stored in any of your electronic health/patient/medical records that come from previously visited health
+        professionals or hospitals.
+        </blockquote>
+        <b>Self-generated fitness and health data</b> include data from sensors, wearables and/or fitness apps (e.g.,
+        the heart rate data tracked by a smartwatch).
+      config:
+        reviewPageTitle: Health data
+    - id: core
+      text: |
+        The <b>core set of data</b> includes the following information:
+        <ul>
+        <li>Clinical problems and conditions,</li>
+        <li>Medication (medicines you are currently taking, medicines you have taken in the past, doses and dates of prescribed medicines),</li>
+        <li>Allergies, intolerances, and adverse reactions,</li>
+        <li>Medical discipline and health care institution associated with the provided data (type of institution e.g.,
+        hospital or general practitioner, and part of the institution’s ZIP code), as well as</li>
+        <li>Demographic information (birthyear, gender, country of residence, part of your ZIP code).</li>
+        </ul>
+      config:
+        reviewPageTitle: Core set of data
+    - id: optional
+      text: |
+        <b>Optional Health Data</b> may include information such as:
+        <ul>
+        <li>Immunizations,</li>
+        <li>Medical devices (e.g., implants) that you have or previously had,</li>
+        <li>History of procedures (e.g., surgeries),</li>
+        <li>Diagnostic results (e.g., laboratory results or blood tests),</li>
+        <li>Vital signs,</li>
+        <li>Self-generated fitness and health data, and</li>
+        <li>Questionnaires related to your personal health.</li>
+        </ul>
+      config:
+        reviewPageTitle: Optional Health Data
+    - id: personal
+      text: |
+        <p>When collecting health data, information such as your name and date of birth is also collected. Such information can
+        easily be used to identify you personally. </p>
+        <p>All <b>personal information</b> directly identifying you (name, date of birth, address, any other related information)
+        will be <b>removed</b> from the selected data or <b>generalized</b> (e.g., *21.02.1982 → *1982) and your platform-internal identification number is
+        replaced by a <b>code</b>.
+      config:
+        reviewPageTitle: Personal information
+    - id: code
+      text: |
+        After all the information directly identifying you has been removed or generalized and replaced by a code, the data you are ready to provide for
+        research are transferred to the Smart4Health research platform and stored there.
+        The <b>code</b> is safely stored within the MyScience App on your smartphone, therefore the code linking the data to your person remains with you. With
+        this process in place, the health data provided for health research cannot be traced back to you without exceedingly disproportionate technical
+        effort.
+      config:
+        reviewPageTitle: Code
+    - id: pseudonym
+      text: |
+        <h4>Protecting personal information</h4>
+        <p>
+          Before data is provided for research,
+          this identifying information is either removed, or generalized. Furthermore,
+          as a user you have a platform-internal identification number that is connected to all the data you have collected.
+          This number is replaced by a code. The data is now <i>“<b>pseudonymised data</b>”</i>. This means that the health data you
+          provide for research is always only associated with this code, not with your real identification number or your name.
+        </p>
+      config:
+        reviewPageTitle: Pseudonymised data
+    - id: DAC
+      text: |
+        The Smart4Health Data Access Committee is a body constituted of named individuals from the Smart4Health consortium.
+        They are responsible for granting (or denying) external requestors (researchers) access to data.
+        The decision is based on your consent, the Smart4Health Data Sharing Policy, and an ethics approval of the
+        research project obtained and presented by the researcher. For more information on the Smart4Health Data Access Committee,
+        its members and the Data Sharing Policy, please visit <a target="blank" href="https://smart4health.eu/dac">https://smart4health.eu/dac</a>.
+      config:
+        reviewPageTitle: Smart4Health Data Access Committee
+    - id: companies
+      text: |
+        The collaboration of public research institutions and commercial companies is necessary for the development of
+        new medical products, systems and procedures. Excluding commercial companies would hinder the improvement of
+        disease prevention, treatment and care. Each request is reviewed by the Data Access Committee and access is
+        granted only if the research contributes to medical progress and complies with National Research Ethics requirements.
+      config:
+        reviewPageTitle: Public and commercial research
+    - id: anonym
+      text: |
+        During <b>anonymization</b>, the code that has been assigned to your identity will be completely removed.
+        Further measures for your protection can be applied at any time according to regular privacy impact assessments.
+        <br><br>
+        Please note: Anonymized data does not count any longer as personal data, because it is not traceable to you anymore.
+        In case you withdraw your consent to data provision, the data transferred to ELIXIR-LU cannot be deleted anymore.
+      config:
+        reviewPageTitle: Anonymization
+    - id: ELIXIR
+      text: |
+        ELIXIR-LU focuses on providing data for biomedical research that bridges between basic scientific research and
+        clinical practice. ELIXIR-LU facilitates long-term and responsible access to research data and tools for scientists
+        in both academia and industry. This allows the reuse of previously generated data to address new research questions.
+      config:
+        reviewPageTitle: ELIXIR-LU
+    - id: contact
+      text: |
+        <i><b>For any questions, concerns, or enquiries you can contact us directly:</b></i>
+        <br><br>
+        Hasso-Plattner-Institut für Digital Engineering gGmbH,
+        <br>
+        Prof.-Dr.-Helmert-Str. 2-3, 14482 Potsdam, Germany
+        <br>
+        (Responsible Project Manager: Prof. Dr. Erwin Böttinger)
+        <br><br>
+        E-Mail: 	<a href="mailto:helpdesk@smart4health.eu">helpdesk@smart4health.eu</a>
+        <br>
+        Website: 	<a target="blank" href="https://smart4health.eu">https://smart4health.eu</a>
+      config:
+        reviewPageTitle: Contact

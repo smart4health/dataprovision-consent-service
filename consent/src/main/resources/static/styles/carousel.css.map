@@ -1,0 +1,1 @@
+{"version":3,"sources":["carousel.css"],"names":[],"mappings":"AAAA,UAEE,WAAY,CACZ,QAAS,CACT,SACF,CAEA,yBANE,UAQF,CAEA,iBACE,sBACF","file":"carousel.css","sourceRoot":"../src","sourcesContent":["html, body {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n}\n\n.carousel-item {\n  width: 100%;\n}\n\n.carousel-hidden {\n  display: none !important;\n}"]}

@@ -1,0 +1,25 @@
+root = false
+
+[*.css]
+indent_size = tab
+tab_width = 2
+
+[{*.ats,*.ts}]
+indent_size = tab
+tab_width = 2
+
+[{*.cjs,*.js}]
+indent_size = tab
+tab_width = 2
+
+[{*.har,*.jsb2,*.jsb3,*.json,.babelrc,.eslintrc,.prettierrc,.stylelintrc,bowerrc,jest.config}]
+tab_width = 2
+
+[{*.htm,*.html,*.ng,*.sht,*.shtm,*.shtml}]
+indent_size = tab
+tab_width = 2
+
+[*.{kt,kts}]
+# trailing commas everywhere!!!
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ij_kotlin_allow_trailing_comma = true

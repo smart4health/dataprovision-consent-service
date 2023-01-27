@@ -1,0 +1,215 @@
+/** Modals for e.g. Glossary, Description */
+
+/* BEGIN: The General "Learn More" Modal Item Container used by Glossary + Description */
+.modal-learn-more {
+  display: block;
+  visibility: hidden; /* Hidden by default */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.1s linear; /* Visibility Transition */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: initial; /* modal content should be scrollable */
+  background-color: rgba(0,0,0,0.05); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-learn-more-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 97vw; /* 97% modal width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  max-height: 90vh; /* 90% modal height */
+  overflow-y: auto; /* scrollable content */
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+
+/* Modal Content: Max Size for large devices */
+@media only screen and (min-width: 768px) {
+  .modal-learn-more-content {
+    width: 40vw;
+  }
+}
+
+/* Modal Content: Text Content Container */
+.modal-learn-more-body {
+  padding: 0px 15px;
+}
+
+/* Modal Bottom Buttons */
+.modal-learn-more-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+/* Modal Bottom Button (CLOSE) */
+.modal-learn-more-option {
+  cursor: pointer;
+  border-radius: 50px;
+  flex: 1;
+  max-width: 100px;
+  max-height: 19px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #34a1ad;
+  color: #121414;
+}
+
+/* Modal Bottom Button Text (CLOSE) */
+.modal-learn-more-option-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Modal Close Button 2 - top right X */
+.modal-learn-more-header-close {
+  color: #606060;
+  float: right;
+  font-size: 28px;
+  padding: 5px 15px 0px 15px;
+}
+
+.modal-learn-more-header-close:hover,
+.modal-learn-more-header-close:focus {
+  opacity: 0.6;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* END: The General "Learn More" Modal Item Container used by Glossary + Description */
+
+/* BEGIN: Glossary specific Settings */
+/* Glossary Dashed Underline */
+popup {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #34a1ad;
+  text-decoration-thickness: 0.15em;
+  cursor: pointer;
+  text-decoration-skip-ink: none;
+}
+
+/* Glossary Info Image right next to word, injected by glossary.ts */
+.info-circle {
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 1em;
+  height: 1em;
+  margin-left: 3px;
+}
+/* END: Glossary specific Settings */
+
+/* BEGIN: Description (More Details) specific Settings */
+.consent-description-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px 0px;
+  padding-bottom: 20px;
+}
+
+.consent-description-option {
+  cursor: pointer;
+  border: 2px solid #06344f;
+  border-radius: 50px;
+  flex: 1;
+  max-width: 170px;
+  max-height: 13px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #06344f;
+  font-size: 0.8rem;
+}
+
+.consent-description-option-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* END: Description (More Details) specific Settings */
+
+/** Begin: QuitConsent Modal on the OptionsPage */
+/* The Modal (background) */
+.option-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.option-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.option-modal-options {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+}
+
+.option-cancel-modal-header {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.option-cancel-modal-body, .option-cancel-modal-header {
+  padding: 0px 10px;
+}
+
+.option-modal-option {
+  cursor: pointer;
+  flex: 1;
+}
+
+.option-modal-option-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #65AEEC;
+}
+
+.option-modal-option-cancel {
+  font-weight: 700;
+}
+
+.option-modal-option-confirm {
+  border-right: 1px solid black;
+}
+/** End: QuitConsent Modal on the OptionsPage */

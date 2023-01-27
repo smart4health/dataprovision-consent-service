@@ -1,0 +1,160 @@
+---
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: docs-ui.html
+  api-docs:
+    path: /docs
+
+documentation-info:
+  title: Smart4Health Data-provision Consent Service
+  description: Consent Frontend and Backend
+  servers:
+    - url: https://localhost:8080
+      description: local environment
+  contact:
+    name: Healthmetrix GmbH
+    url: http://localhost:8080
+    email: admin@healthmetrix.com
+
+management:
+  endpoints:
+    enabled-by-default: no
+    web.exposure.include: health,metrics,prometheus
+  endpoint.health.enabled: yes
+  endpoint.prometheus.enabled: yes
+  endpoint.metrics.enabled: yes
+  metrics:
+    enable:
+      # Excluded are spring.data.repository.invocations by DynamicConsentApplication auto config exclusion
+      all: yes
+
+server:
+  port: 8080
+
+# should use mock secrets
+# secrets.namespace: "dynamic-consent/dev"
+
+signing:
+  backend-url: http://localhost:8080
+  database:
+    endpoint: # in the shape of endpoint:port
+    database-name: # usually "dynamic-consent"
+    schema: public
+
+spring:
+  cloud.vault.enabled: false
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ # set at runtime, blank for auto-initialization
+    username: # set at runtime
+    password: # set at runtime
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    generate-ddl: false
+    hibernate.ddl-auto: validate
+
+  liquibase:
+    change-log: classpath:db/changelog.yaml
+    enabled: false
+
+  profiles:
+    group:
+      firebase-token-verifier:
+        - verify-jwt
+      remote-repositories:
+        - remote-signing
+        - remote-consent
+      local-repositories:
+        - remote-repositories
+      dev:
+        - secrets-aws
+        - postgres
+        - jsonlog
+        - firebase-token-verifier
+        - remote-repositories
+        - cloudwatch-metrics
+      prod:
+        - secrets-vault
+        - postgres
+        - firebase-token-verifier
+        - jsonlog
+        - remote-repositories
+
+  mvc:
+    static-path-pattern: /consent-assets/**
+
+---
+spring.config.activate.on-profile: postgres
+
+spring.liquibase.enabled: true
+
+signing.database:
+  endpoint: "localhost:5432"
+  database-name: "dynamic-consent"
+
+---
+spring.config.activate.on-profile: jsonlog
+
+main.banner-mode: off
+
+---
+spring.config.activate.on-profile: cloudwatch-metrics
+
+management.metrics.enable.jvm: yes
+cloudwatch-metrics:
+  namespace: "" # override per stage
+  step: PT60S
+
+---
+spring.config.activate.on-profile: local-repositories
+
+remote-consent.sources.smart4health: https://consents.smart4health.eu
+remote-signing.sources.smart4health: https://consents.smart4health.eu
+
+---
+spring.config.activate.on-profile: dev
+
+secrets.namespace: "dynamic-consent/dev"
+cloudwatch-metrics.namespace: "dynamic-consent/dev"
+signing:
+  backend-url: https://consent.dev.healthmetrix.com
+
+remote-consent.sources.smart4health: https://consents.smart4health.eu
+remote-signing.sources.smart4health: https://consents.smart4health.eu
+
+---
+spring.config.activate.on-profile: prod
+
+signing:
+  backend-url: https://consent.healthmetrix.com
+
+management.server.port: 8081
+
+remote-consent.sources.smart4health: https://consents.smart4health.eu
+remote-signing.sources.smart4health: https://consents.smart4health.eu
+
+---
+spring.config.activate.on-profile: secrets-vault
+
+spring.application.name: consent
+spring.cloud:
+  vault:
+    enabled: true
+    host: localhost
+    port: 8200
+    scheme: http
+    authentication: APPROLE
+    token: # injected on deployment
+    app-role:
+      role: consent
+spring.config:
+  import:
+    - vault://secret/consent/rds-credentials?prefix=rds-credentials.
+    - vault://secret/consent/firebase?prefix=firebase.
+    - vault://secret/consent/consent-signing-material?prefix=consent-signing-material.
+    - vault://secret/consent/signing-signing-material?prefix=signing-signing-material.
+    - vault://secret/consent/signing-encryption?prefix=signing-encryption.
+
+---

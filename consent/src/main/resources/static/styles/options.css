@@ -1,0 +1,152 @@
+.consent-question-container {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.consent-question-container .consent-question-container-content {
+    padding: 10px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.consent-question-container .consent-question-container-content label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+[id|="option-accept"]:checked~.option-accept,
+[id|="option-reject"]:checked~.option-reject{
+    background: #ffffff;
+    border: 2px solid #34A1AD;
+}
+
+.consent-question-container .consent-question-container-content label .select-dots {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+[id|="option-accept"]:checked~.option-accept .select-dots,
+[id|="option-reject"]:checked~.option-reject .select-dots{
+    background: #fff
+}
+
+.consent-question-container-content label .select-dots::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+[id|="option-accept"]:checked~.option-accept .select-dots::before,
+[id|="option-reject"]:checked~.option-reject .select-dots::before {
+    background: #34A1AD;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.consent-question-container .consent-question-container-content label .text {
+    font-size: 18px;
+    padding-left: 20px;
+    color: black;
+}
+
+[id|="option-accept"]:checked~.option-accept .text,
+[id|="option-reject"]:checked~.option-reject .text{
+    color: #000000
+}
+
+.consent-question-container .consent-question-container-content input[type="radio"] {
+    display: none
+}
+
+/*BEGIN: Review Option Toggles*/
+.review-question-container {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.review-question-container .review-question-container-content {
+    padding: 10px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+
+.review-question-container .review-question-container-content label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: none;
+    transition: all 0.3s ease;
+}
+
+[id|="review-option-accept"]:checked~.review-option-accept,
+[id|="review-option-reject"]:checked~.review-option-reject{
+    background: #ffffff;
+}
+
+.review-question-container .review-question-container-content label .select-dots {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+[id|="review-option-accept"]:checked~.review-option-accept .select-dots,
+[id|="review-option-reject"]:checked~.review-option-reject .select-dots{
+    background: #fff
+}
+
+.review-question-container-content label .select-dots::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+[id|="review-option-accept"]:checked~.review-option-accept .select-dots::before,
+[id|="review-option-reject"]:checked~.review-option-reject .select-dots::before {
+    background: #707070;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.review-question-container .review-question-container-content label .text {
+    padding-left: 20px;
+    color: black;
+}
+
+[id|="review-option-accept"]:checked~.review-option-accept .text,
+[id|="review-option-reject"]:checked~.review-option-reject .text{
+    color: #000000
+}
+
+.review-question-container .review-question-container-content input[type="radio"] {
+    display: none
+}
+/*END: Review Option Toggles*/
