@@ -1,5 +1,13 @@
 # Smart4Health Data-provision Consent Service
 
+## Acknowledgements
+
+<img src="./img/eu.jpg" align="left" alt="European Flag" width="60">
+
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 826117.
+
+## About
+
 This service takes care of guiding the citizen through the consent process in
 the [Smart4Health MyScience App](https://github.com/smart4health/my-science-app). The consent resources are pulled as an
 external configuration
