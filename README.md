@@ -166,3 +166,33 @@ The files will be written to [api/build/json-schema](api/build/json-schema).
 Minor adjustments for non-optional fields that have default values have to be done though. See the example json in
 [https://github.com/smart4health/dataprovision-consent-resources/tree/main/_schema](https://github.com/smart4health/dataprovision-consent-resources/tree/main/_schema)
 . That's because jackson-kotlin marks it as required: https://github.com/mbknor/mbknor-jackson-jsonSchema/issues/97.
+
+## Code Stats
+Generated with [tokei](https://github.com/XAMPPRocky/tokei)
+
+```
+===============================================================================
+ Language            Files        Lines         Code     Comments       Blanks
+===============================================================================
+ Batch                   1           91           70            0           21
+ CSS                    12         1451         1069          158          224
+ JavaScript              2           50           46            0            4
+ JSON                    7         1727         1713            0           14
+ Kotlin                121         8400         7267          180          953
+ Shell                   2          277          126          117           34
+ SQL                    11           71           65            0            6
+ SVG                    46         2047         2018           29            0
+ Plain Text              1           12            0           10            2
+ TOML                    1          112           80            5           27
+ TypeScript             34         1277         1107           19          151
+ XML                     1           19           19            0            0
+ YAML                    6          890          819            3           68
+-------------------------------------------------------------------------------
+ Markdown                4          371            0          252          119
+ |- JSON                 1           13           13            0            0
+ |- Shell                1           10           10            0            0
+ (Total)                            394           23          252          119
+===============================================================================
+ Total                 249        16795        14399          773         1623
+===============================================================================
+```
